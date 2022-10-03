@@ -2,10 +2,56 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cat-container{
+  display: flex;
+  align-items: flex-end;
 }
+.cat {
+  display: block;
+  pointer-events: all;
+}
+.cat[squish='1']{
+  animation: squish 0.3s;
+}
+
+@keyframes squish {
+  25% {
+    transform: scale(1, 0.9);
+    transform-origin: 20% bottom;
+  }
+  30% {
+    transform: scale(1, 0.6);
+    transform-origin: 20% bottom;
+
+  }
+  45% {
+    transform: scale(1, 0.5);
+    transform-origin: 20% bottom;
+
+  }
+  55% {
+    transform: scale(1, 1.3);
+    transform-origin: 20% bottom;
+
+  }
+  65% {
+    transform: scale(1, 1.1);
+    transform-origin: 20% bottom;
+
+  }
+  85% {
+    transform: scale(1, 0.95);
+    transform-origin: 20% bottom;
+
+  }
+  100% {
+    transform: scale(1, 1);
+    transform-origin: 20% bottom;
+
+  }
+  
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -26,13 +72,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
