@@ -1,3 +1,3 @@
 # Want to click a cat?
 
-[Cat Clicker App](https://stavana2.github.io/cat-clicker/)
+[Cat Clicker App](https://satvna.github.io/cat-clicker/)
